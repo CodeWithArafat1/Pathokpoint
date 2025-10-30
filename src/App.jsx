@@ -1,15 +1,20 @@
 import React from "react";
 import Nav from "./components/shared/Nav";
 
-import SidebarLayout from "./components/Banner";
+import Home from "./pages/Home";
+import Footer from "./components/shared/Footer";
 
 const App = () => {
   return (
     <>
       <nav>
         <Nav />
-        <SidebarLayout/>
+        <Home />
       </nav>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

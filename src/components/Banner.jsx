@@ -1,6 +1,8 @@
 import React, { useState, useRef } from "react";
 import banner1 from "../assets/banner-1.webp";
-const banner = [banner1, banner1, banner1, banner1];
+import banner2 from "../assets/banner2.jpg";
+import banner3 from "../assets/banner3.jpg";
+const banner = [banner1, banner2, banner3];
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 import "swiper/css";
@@ -83,7 +85,7 @@ const allMegaMenuData = {
 
 const sidebarItems = ["মেয়েদের ড্রেস", "আম", "মধু", "খেজুরের গুড়"];
 
-export default function SidebarLayout() {
+const Banner = () => {
   const [activeItem, setActiveItem] = useState(null);
   const currentMenuData = allMegaMenuData[activeItem];
   const prevRef = useRef(null);
@@ -212,4 +214,6 @@ export default function SidebarLayout() {
       </div>
     </>
   );
-}
+};
+
+export default Banner;
