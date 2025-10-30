@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Nav from "./components/shared/Nav";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <nav>
+        <Nav />
+      </nav>
+    </>
+  );
+};
 
-export default App
+export default App;
